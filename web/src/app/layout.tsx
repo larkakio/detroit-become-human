@@ -15,16 +15,19 @@ const body = DM_Sans({
   weight: ["400", "500", "600", "700"],
 });
 
-const baseAppId = process.env.NEXT_PUBLIC_BASE_APP_ID ?? "";
+/** Canonical production URL and Base app registration (dashboard.base.org). */
+const DEFAULT_SITE_URL = "https://detroit-become-human.vercel.app";
+const DEFAULT_BASE_APP_ID = "69d75f3dfefa3ff9b6fdafc9";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? DEFAULT_SITE_URL;
+const baseAppId = process.env.NEXT_PUBLIC_BASE_APP_ID ?? DEFAULT_BASE_APP_ID;
 
 export const metadata: Metadata = {
   title: "Convergence Field — Stability Grid",
   description:
     "A neon cyber-thriller swipe puzzle on Base. Reach the convergence exit.",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  ),
-  other: baseAppId ? { "base:app_id": baseAppId } : {},
+  metadataBase: new URL(siteUrl),
+  other: { "base:app_id": baseAppId },
   openGraph: {
     title: "Convergence Field — Stability Grid",
     description:
