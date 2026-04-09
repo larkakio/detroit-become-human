@@ -1,0 +1,20 @@
+# Next.js (web/)
+web/node_modules/
+web/.next/
+web/out/
+web/build/
+web/.vercel
+web/*.tsbuildinfo
+web/.env
+web/.env.local
+web/.env.*.local
+
+# Foundry (contracts/)
+contracts/cache/
+contracts/out/
+contracts/broadcast/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
