@@ -14,11 +14,11 @@ cd web && npm install && npm run dev
 ```
 
 **Production:** [https://detroit-become-human.vercel.app](https://detroit-become-human.vercel.app)  
-`web/.env.local` is gitignored; copy from `web/.env.example` and set `NEXT_PUBLIC_BUILDER_CODE` locally. In Vercel → Environment Variables, set the same `NEXT_PUBLIC_*` values (including `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_BASE_APP_ID`).
+`web/.env.local` is gitignored; copy from `web/.env.example` if needed. In Vercel → Environment Variables, set the same `NEXT_PUBLIC_*` values (including builder code for transaction attribution).
 
 ## Env
 
-See `web/.env.example`. **Deployed contract (Base mainnet):** `0x096cA71ad016DAEc85765474F6ec8aaa168f56C1`. **Base app ID:** `69d75f3dfefa3ff9b6fdafc9`. Set `NEXT_PUBLIC_BUILDER_CODE` (`bc_…` from [base.dev](https://www.base.dev)).
+See `web/.env.example`. **Deployed contract (Base mainnet):** `0x096cA71ad016DAEc85765474F6ec8aaa168f56C1`. **Base app ID:** `69d75f3dfefa3ff9b6fdafc9`. **Builder code:** `bc_b3fxh43o` ([base.dev](https://www.base.dev) → Settings → Builder Code).
 
 ## Contract
 
